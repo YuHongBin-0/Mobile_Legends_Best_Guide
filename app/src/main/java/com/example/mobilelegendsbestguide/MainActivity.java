@@ -1,23 +1,14 @@
 package com.example.mobilelegendsbestguide;
 
-import android.content.Intent;
 
 import android.os.Bundle;
-
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
-import android.os.Bundle;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,5 +69,4 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             };
-
 }

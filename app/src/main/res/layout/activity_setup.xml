@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".SetupActivity"
+    android:background="#1F1E1E">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Legends"
+        android:textSize="20dp"
+        android:textColor="#C2BC8E"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/imageView"/>
+
+    <TextView
+        android:layout_below="@+id/textView"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Guide"
+        android:textSize="20dp"
+        android:textColor="#FFC2BC8E"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageView"/>
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/splash"
+        android:id="@+id/imageView"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:paddingBottom="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewPager"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/SliderDots"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="100dp"
+        android:background="@drawable/setupbutton"
+        android:textColor="#E6D96C"
+        android:paddingLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Start" />
+
+
+
+</RelativeLayout>

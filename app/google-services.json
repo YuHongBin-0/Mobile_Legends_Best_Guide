@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "810253523630",
+    "firebase_url": "https://mlguide-ad541.firebaseio.com",
+    "project_id": "mlguide-ad541",
+    "storage_bucket": "mlguide-ad541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810253523630:android:b497bcc2e9ced51c282b3f",
+        "android_client_info": {
+          "package_name": "com.example.mobilelegendsbestguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810253523630-3485se7vj7h66jt6rei0bbj7skr5evch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh9_pMRt0ugOF9AShygJvQH8PgxJSlplw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810253523630-3485se7vj7h66jt6rei0bbj7skr5evch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -41,20 +41,6 @@ public class HeroFragment extends Fragment {
         lstHero.add(new Hero("Silvanna","Categorie Book","Description book",R.drawable.silvanna, R.drawable.silvanna));
         lstHero.add(new Hero("Nana","Categorie Book","Description book",R.drawable.nana, R.drawable.nana));
         lstHero.add(new Hero("Gusion","Categorie Book","Description book",R.drawable.gusion, R.drawable.gusion));
-        lstHero.add(new Hero("Kimmy","Categorie Book","Description book",R.drawable.kimmy, R.drawable.kimmy));
-        lstHero.add(new Hero("Change","Categorie Book","Description book",R.drawable.change, R.drawable.change));
-        lstHero.add(new Hero("Lylia","Categorie Book","Description book",R.drawable.lylia, R.drawable.lylia));
-        lstHero.add(new Hero("Silvanna","Categorie Book","Description book",R.drawable.silvanna, R.drawable.silvanna));
-        lstHero.add(new Hero("Nana","Categorie Book","Description book",R.drawable.nana, R.drawable.nana));
-        lstHero.add(new Hero("Gusion","Categorie Book","Description book",R.drawable.gusion, R.drawable.gusion));
-        lstHero.add(new Hero("Kimmy","Categorie Book","Description book",R.drawable.kimmy, R.drawable.kimmy));
-        lstHero.add(new Hero("Change","Categorie Book","Description book",R.drawable.change, R.drawable.change));
-        lstHero.add(new Hero("Lylia","Categorie Book","Description book",R.drawable.lylia, R.drawable.lylia));
-        lstHero.add(new Hero("Silvanna","Categorie Book","Description book",R.drawable.silvanna, R.drawable.silvanna));
-        lstHero.add(new Hero("Nana","Categorie Book","Description book",R.drawable.nana, R.drawable.nana));
-        lstHero.add(new Hero("Gusion","Categorie Book","Description book",R.drawable.gusion, R.drawable.gusion));
-
-
 
 
         RecyclerView myrv = (RecyclerView) view.findViewById(R.id.recyclerview_id);

@@ -44,7 +44,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
         holder.tv_hero_name.setText(mData.get(position).getTitle());
-        holder.img_hero_icon.setImageResource(mData.get(position).getIcon());
+        holder.img_hero_thumbnail.setImageResource(mData.get(position).getThumbnail());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +54,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 // passing data to the hero activity
                 intent.putExtra("Title",mData.get(position).getTitle());
                 intent.putExtra("Description",mData.get(position).getDescription());
-                intent.putExtra("Icon",mData.get(position).getIcon());
+                intent.putExtra("Thumbnail",mData.get(position).getThumbnail());
+                intent.putExtra("Poster",mData.get(position).getPoster());
                 // start the activity
                 mContext.startActivity(intent);
 
@@ -73,19 +74,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView tv_hero_name;
-        ImageView img_hero_icon;
+        ImageView img_hero_thumbnail;
         CardView cardView ;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
             tv_hero_name = (TextView) itemView.findViewById(R.id.hero_name_id) ;
-            img_hero_icon = (ImageView) itemView.findViewById(R.id.hero_img_id);
+            img_hero_thumbnail = (ImageView) itemView.findViewById(R.id.hero_img_id);
             cardView = (CardView) itemView.findViewById(R.id.cardview_id);
-
-
         }
     }
-
-
 }

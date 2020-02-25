@@ -6,17 +6,17 @@ public class Hero {
     private String Category ;
     private String Description ;
     private int Thumbnail ;
-    private int Icon;
+    private int Poster;
 
     public Hero() {
     }
 
-    public Hero(String title, String category, String description, int thumbnail, int icon) {
+    public Hero(String title, String category, String description, int thumbnail, int poster) {
         Title = title;
         Category = category;
         Description = description;
         Thumbnail = thumbnail;
-        Icon = icon;
+        Poster = poster;
     }
 
 
@@ -36,8 +36,8 @@ public class Hero {
         return Thumbnail;
     }
 
-    public int getIcon() {
-        return Icon;
+    public int getPoster() {
+        return Poster;
     }
 
 
@@ -57,7 +57,7 @@ public class Hero {
         Thumbnail = thumbnail;
     }
 
-    public void setIcon(int icon) {
-        Icon = icon;
+    public void setPoster(int poster) {
+        Poster = poster;
     }
 }

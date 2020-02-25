@@ -1,15 +1,15 @@
 package com.example.mobilelegendsbestguide;
 
 import android.content.Intent;
-
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class HeroActivity extends AppCompatActivity {
@@ -38,7 +38,7 @@ public class HeroActivity extends AppCompatActivity {
                 public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
 
-                    OverviewFragment selectedFragment = null;
+                    Fragment selectedFragment = null;
 
                     switch (menuItem.getItemId()) {
 
@@ -56,15 +56,12 @@ public class HeroActivity extends AppCompatActivity {
 
                             break;
 
-                        case R.id.nav_others:
+                        case R.id.nav_counters:
                             selectedFragment = new CounterFragment();
                             textView.setTextColor(Color.YELLOW);
                             textView.setText("Counter");
 
-                            break;
-
-
-                    }
+                            break;                   }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();
 

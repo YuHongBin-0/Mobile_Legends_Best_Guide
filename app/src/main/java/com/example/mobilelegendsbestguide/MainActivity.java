@@ -1,5 +1,6 @@
 package com.example.mobilelegendsbestguide;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -27,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        bottomNav.setSelectedItemId(R.id.nav_home);
+        bottomNav.setSelectedItemId(R.id.nav_hero);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new HomeFragment()).commit();
+                new HeroFragment()).commit();
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -44,19 +45,22 @@ public class MainActivity extends AppCompatActivity {
 
                         case R.id.nav_fav:
                             selectedFragment = new FavFragment();
-                            textView.setText("Favorite");
+                            textView.setTextColor(Color.YELLOW);
+                            textView.setText("Favorites");
 
                             break;
 
-                        case R.id.nav_home:
-                            selectedFragment = new HomeFragment();
-                            textView.setText("Books");
+                        case R.id.nav_hero:
+                            selectedFragment = new HeroFragment();
+                            textView.setTextColor(Color.YELLOW);
+                            textView.setText("Heroes");
 
                             break;
 
                         case R.id.nav_others:
                             selectedFragment = new OthersFragment();
-                            textView.setText("Cart");
+                            textView.setTextColor(Color.YELLOW);
+                            textView.setText("Others");
 
                             break;
 
